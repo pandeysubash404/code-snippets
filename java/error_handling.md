@@ -1,4 +1,4 @@
-# Java Error Handling Snippets
+# Error Handling Case Snippets
 
 This file contains snippets of Java code that demonstrate handling various common exceptions such as `ArithmeticException`, `ArrayIndexOutOfBoundsException`, `NullPointerException`, and more. Each snippet intentionally triggers an error to showcase how exceptions can be caught in Java.
 
@@ -6,35 +6,43 @@ This file contains snippets of Java code that demonstrate handling various commo
 Raises an `ArithmeticException` since division by zero is undefined.
 
 ```java
-public class DivisionByZero {
+class DivisionByZero {
     public static void main(String[] args) {
         try {
-            int result = 10 / 0;
+            int result = 10 / 0;  
+            System.out.println("Division operation successful!");
         } catch (ArithmeticException e) {
-            System.out.println("Division by zero operation passed!");
-        } else {
             System.out.println("Division by zero operation failed!");
         }
     }
 }
+```
+Expected Output:
+```text
+Division by zero operation failed!
 ```
 
 ## 2. Index Out of range
 Tries to access an index that doesn't exist in an array, causing an `ArrayIndexOutOfBoundsException`.
 
 ```java
-public class IndexOutOfRange {
+class IndexOutOfRange {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
+        int[] arr = {1, 2, 3};  // Array of size 3
         try {
-            int value = arr[10];
+            int value = arr[10];  // throw ArrayIndexOutOfBoundsException
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Index out of range operation passed!");
-        } else {
-            System.out.println("Index out of range operation failed!");
+        } finally {
+            System.out.println("Finished checking index out of range.");
         }
     }
 }
+```
+Expected Output:
+```text
+Index out of range operation passed!
+Finished checking index out of range.
 ```
 
 ## 3. Key Error in HashMap
@@ -43,80 +51,107 @@ Tries to access a key in a HashMap that doesn’t exist, which should raise a `N
 ```java
 import java.util.HashMap;
 
-public class KeyError {
+class KeyError {
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<>();
         map.put("name", "Alice");
 
-        try {
-            String value = map.get("age");
-            if (value.equals(null)) throw new NullPointerException();
-        } catch (NullPointerException e) {
-            System.out.println("KeyError operation passed!");
+        // Try to retrieve a value for a non-existent key
+        String value = map.get("age");
+
+        if (value == null) {
+            System.out.println("KeyError operation passed!"); 
         } else {
-            System.out.println("KeyError operation failed!");
+            System.out.println("KeyError operation failed!"); 
         }
     }
 }
+```
+Expected Output:
+```text
+KeyError operation passed!
 ```
 
 ## 4. Type Mismatch
 Adding an integer and a string, which should raise a `Compile-Time Error`.
 
 ```java
-public class TypeMismatch {
+class TypeMismatch {
     public static void main(String[] args) {
-        // This will raise a compile-time error, and Java will not allow this code to run.
+        // raise a compile-time error
         int result = 5 + "five"; 
     }
 }
+```
+Expected Output:
+```text
+error: incompatible types: String cannot be converted to int
+        int result = 5 + "five"; 
+                       ^
 ```
 
 ## 5. Invalid Syntax
 Invalid Java syntax. The compiler should throw a `SyntaxError`.
 
 ```java
-public class InvalidSyntax {
+class InvalidSyntax {
     public static void main(String[] args) {
-        // the following code contains invalid syntax:
-        if (true) System.out.println("Hello"); // missing brace is a syntax error.
+        if (true) System.out.println("Hello"; // missing bracket is a syntax error.
     }
 }
+```
+Expected Output:
+```text
+error: ')' expected
+        if (true) System.out.println("Hello"; // missing bracket is a syntax error.
+                                            ^
 ```
 
 ## 6. Name Error (Undefined Variable)
 Tries to use a variable that hasn’t been defined, which should raise a `Compile-Time Error`.
 
 ```java
-public class NameError {
+class NameError {
     public static void main(String[] args) {
-        // the below will cause a compile-time error because 'undefinedVariable' is not defined.
+        // 'undefinedVariable' is not defined.
          System.out.println(undefinedVariable);
     }
 }
+```
+Expected Output:
+```text
+error: cannot find symbol
+         System.out.println(undefinedVariable);
+                            ^
 ```
 
 ## 7. Attribute Error
 Tries to call a non-existent method on a data type, raising a `NoSuchMethodError`.
 
 ```java
-public class AttributeError {
+class AttributeError {
     public static void main(String[] args) {
         String text = "Hello";
         try {
-            text.nonExistingMethod(); // this would cause a compile error since this method doesn't exist.
+            text.nonExistingMethod(); // this method doesn't exist.
         } catch (NoSuchMethodError e) {
             System.out.println("AttributeError operation passed!");
         }
     }
 }
 ```
+Expected Output:
+```text
+error: cannot find symbol
+            text.nonExistingMethod(); // this method doesn't exist.
+                ^
+```
 
 ## 8. Value Error
 Attempts to parse an invalid string into an integer, which should raise a `NumberFormatException`.
 
 ```java
-public class ValueError {
+class ValueError {
     public static void main(String[] args) {
         try {
             int value = Integer.parseInt("invalid_int");
@@ -126,6 +161,10 @@ public class ValueError {
     }
 }
 ```
+Expected Output:
+```text
+ValueError operation passed!
+```
 
 ## 9. Import Error
 Tries to import a non-existent class, which will raise a `Compile-Time Error`.
@@ -134,18 +173,24 @@ Tries to import a non-existent class, which will raise a `Compile-Time Error`.
 // the module `non_existing_module` does not exist.
 import non_existing_module;
 
-public class ImportError {
+class ImportError {
     public static void main(String[] args) {
        // this would be a compile error.
     }
 }
+```
+Expected Output:
+```text
+error: '.' expected
+import non_existing_module;
+                          ^
 ```
 
 ## 10. Overflow Error
 Raises an `ArithmeticException` when attempting to calculate a value that is too large for an integer.
 
 ```java
-public class OverflowError {
+class OverflowError {
     public static void main(String[] args) {
         try {
             int result = Math.multiplyExact(Integer.MAX_VALUE, 2);
@@ -155,12 +200,16 @@ public class OverflowError {
     }
 }
 ```
+Expected Output:
+```text
+OverflowError operation passed!
+```
 
 ## 11. Recursion Limit Exceeded
 Infinite recursion that will exceed Java’s stack limit, resulting in a `StackOverflowError`.
 
 ```java
-public class RecursionError {
+class RecursionError {
     public static void infiniteRecursion() {
         infiniteRecursion();
     }
@@ -174,12 +223,16 @@ public class RecursionError {
     }
 }
 ```
+Expected Output:
+```text
+RecursionError operation passed!
+```
 
 ## 12. Memory Error
 Create an extremely large array, which may raise an `OutOfMemoryError`.
 
 ```java
-public class MemoryError {
+class MemoryError {
     public static void main(String[] args) {
         try {
             int[] largeArray = new int[Integer.MAX_VALUE];
@@ -189,23 +242,12 @@ public class MemoryError {
     }
 }
 ```
-
-## 13. Assertion Error
-Raises an `AssertionError` if the condition is false.
-
-```java
-public class AssertionErrorExample {
-    public static void main(String[] args) {
-        try {
-            assert false : "This is an AssertionError";
-        } catch (AssertionError e) {
-            System.out.println("AssertionError operation passed!");
-        }
-    }
-}
+Expected Output:
+```text
+MemoryError operation passed!
 ```
 
-## 14. File Not Found Error
+## 13. File Not Found Error
 Attempts to open a non-existent file, which should raise a `FileNotFoundException`.
 
 ```java
@@ -213,7 +255,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public class FileNotFoundError {
+class FileNotFoundError {
     public static void main(String[] args) {
         try {
             File file = new File("non_existent_file.txt");
@@ -223,6 +265,10 @@ public class FileNotFoundError {
         }
     }
 }
+```
+Expected Output:
+```text
+FileNotFoundError operation passed!
 ```
 
 ## Conclusion

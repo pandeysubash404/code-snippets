@@ -1,4 +1,4 @@
-# Python Error Handling Case
+# Error Handling Case Snippets
 
 This bad case checks if the Python compiler correctly flags a syntax error.
 
