@@ -1,4 +1,4 @@
-# Happy Cases
+# Python Functional Cases
 
 This document contains a set of basic operation cases to validate that the Python compiler handles various operations correctly.
 
@@ -20,6 +20,17 @@ def arithmetic():
 arithmetic()
 print("Arithmetic operation completed!")
 ```
+Output:
+```text
+2 + 2 = 4
+10 - 5 = 5
+10 * 3 = 30
+100 / 5 = 20.0
+2 ** 3 = 8
+9 // 2 = 4
+9 % 2 = 1
+Arithmetic operation completed!
+```
 
 ## 2. String Manupulation
 String operations like concatenation, multiplication, length, case conversion, and slicing.
@@ -35,6 +46,16 @@ def strings():
 
 strings()
 print("String manipulation operation completed!")
+```
+Output:
+```text
+"Hello" + " " + "World" = Hello World
+"abc" * 3 = abcabcabc
+len("hello") = 5
+"Python".upper() = PYTHON
+"PYTHON".lower() = python
+"racecar"[::-1] = racecar
+String manipulation operation completed!
 ```
 
 ## 3. List Operation
@@ -55,6 +76,16 @@ def lists():
 lists()
 print("List operations completed!")
 ```
+Output:
+```text
+List concatenation: [1, 2, 3, 4, 5]
+Length of list: 3
+After appending: [1, 2, 3, 4]
+First element: 1
+Last element: 4
+After popping: [1, 2, 3]
+List operations completed!
+```
 
 ## 4. Dictionary Operations
 Python dictionaries, including accessing, modifying, and checking elements.
@@ -70,6 +101,14 @@ def dictionaries():
 
 dictionaries()
 print("Dictionary operations completed!")
+```
+Output:
+```text
+Value for "key1": value1
+Length of dictionary: 2
+Is 'key3' in dictionary? True
+Value for "key2": value2
+Dictionary operations completed!
 ```
 
 ## 5. Boolean Logic
@@ -87,6 +126,16 @@ def boolean_logic():
 boolean_logic()
 print("Boolean logic operation completed!")
 ```
+Output:
+```text
+True and True = True
+True or False = True
+not False = True
+5 > 3 = True
+3 < 1 = False
+5 == 5 and 2 == 2 = True
+Boolean logic operation completed!
+```
 
 ## 6. Tuple Operation
 Tuple operations like indexing, concatenation, and repetition.
@@ -100,6 +149,13 @@ def tuples():
 
 tuples()
 print("Tuple operations completed!")
+```
+Output:
+```text
+Tuple concatenation: (1, 2, 3, 4, 5)
+First element: 1
+Repetition of tuple: (1, 2, 3, 1, 2, 3)
+Tuple operations completed!
 ```
 
 ## 7. Set Operation
@@ -115,6 +171,13 @@ def sets():
 
 sets()
 print("Set operations completed!")
+```
+Output:
+```text
+Union of sets: {1, 2, 3, 4, 5}
+Intersection of sets: {3}
+Difference of sets: {1, 2}
+Set operations completed!
 ```
 
 ## 8. Control Flow
@@ -141,6 +204,17 @@ def control_flow():
 control_flow()
 print("Control flow operration completed!")
 ```
+Output:
+```text
+x is greater than 5
+Sum of first 5 numbers: 10
+For loop result:
+0
+1
+2
+x after while loop: 0
+Control flow operration completed!
+```
 
 ## 9. Function
 Function definition and invocation. It verify whether a simple function returns the correct results.
@@ -157,6 +231,13 @@ def functions():
 functions()
 print("Function operation completed!")
 ```
+Output:
+```text
+add(2, 3) = 5
+add(10, -5) = 5
+add(0, 0) = 0
+Function operation completed!
+```
 
 ## 10. List Comprehension
 Validates the correct execution of list comprehensions for creating lists and filtering values.
@@ -171,6 +252,12 @@ def list_comprehension():
 
 list_comprehension()
 print("List comprehension operation completed!")
+```
+Output:
+```text
+Squares: [0, 1, 4, 9, 16]
+Even numbers: [0, 2, 4, 6, 8]
+List comprehension operation completed!
 ```
 
 ## Conclusion

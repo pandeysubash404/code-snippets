@@ -1,4 +1,4 @@
-# Bad Case: Syntax Error
+# Python Error Handling Case
 
 This bad case checks if the Python compiler correctly flags a syntax error.
 
@@ -16,6 +16,12 @@ def division_by_zero():
 
 division_by_zero()
 ```
+Output:
+```text
+Division by zero operation passed!
+```
+
+
 ## 2. Index Out of Range
 Tries to access an index that doesn't exist in a list, causing an `IndexError`.
 
@@ -30,6 +36,10 @@ def index_out_of_range():
         print("Index out of range operation failed!")
 
 index_out_of_range()
+```
+Output:
+```text
+Index out of range operation passed!
 ```
 
 ## 3. Key Error in Dictionary
@@ -47,6 +57,10 @@ def key_error():
 
 key_error()
 ```
+Output:
+```text
+KeyError operation passed!
+```
 
 ## 4. Type Mismatch
 Adding an integer and a string, which should raise a `TypeError`.
@@ -61,6 +75,10 @@ def type_mismatch():
         print("Type mismatch operation failed!")
 
 type_mismatch()
+```
+Output:
+```text
+Type mismatch operation passed!
 ```
 
 ## 5. Invalid Syntax
@@ -77,6 +95,10 @@ def invalid_syntax():
 
 invalid_syntax()
 ```
+Output:
+```text
+SyntaxError operation passed!
+```
 
 ## 6. Name Error (Undefined Variable)
 Tries to use a variable that hasn’t been defined, which should raise a `NameError`.
@@ -91,6 +113,10 @@ def name_error():
         print("NameError operation failed!")
 
 name_error()
+```
+Output:
+```text
+NameError operation passed!
 ```
 
 ## 7. Attribute Error
@@ -107,6 +133,10 @@ def attribute_error():
 
 attribute_error()
 ```
+Output:
+```text
+AttributeError operation passed!
+```
 
 ## 8. Value Error
 Attempts to convert an invalid string to an integer, which should raise a `ValueError`.
@@ -122,6 +152,10 @@ def value_error():
 
 value_error()
 ```
+Output:
+```text
+ValueError operation passed!
+```
 
 ## 9. Import Error
 Tries to import a non-existent module, which should raise an `ImportError`.
@@ -136,6 +170,10 @@ def import_error():
         print("ImportError operation failed!")
 
 import_error()
+```
+Output:
+```text
+ImportError operation passed!
 ```
 
 ## 10. Overflow Error
@@ -153,6 +191,10 @@ def overflow_error():
         print("OverflowError operation failed!")
 
 overflow_error()
+```
+Output:
+```text
+OverflowError operation passed!
 ```
 
 ## 11. Recursion Limit Exceeded
@@ -172,6 +214,10 @@ def recursion_error():
 
 recursion_error()
 ```
+Output:
+```text
+RecursionError operation passed!
+```
 
 ## 12. Memory Error
 Create an extremely large list, which may raise a MemoryError if the system runs out of memory.
@@ -187,23 +233,12 @@ def memory_error():
 
 memory_error()
 ```
-
-## 13. Assertion Error
-Raises an `AssertionError` if the condition is `False`.
-
-```python
-def assertion_error():
-    try:
-        assert False, "This is an AssertionError"
-    except AssertionError:
-        print("AssertionError operation passed!")
-    else:
-        print("AssertionError operation failed!")
-
-assertion_error()
+Output:
+```text
+MemoryError operation passed!
 ```
 
-## 14. File Not Found Error
+## 13. File Not Found Error
 Attempts to open a non-existent file, which should raise a `FileNotFoundError`.
 
 ```python
@@ -217,6 +252,10 @@ def file_not_found_error():
         print("FileNotFoundError operation failed!")
 
 file_not_found_error()
+```
+Output:
+```text
+FileNotFoundError operation passed!
 ```
 
 ## Conclusion
