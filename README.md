@@ -7,6 +7,7 @@ Welcome to **Programming Language Code Snippets**, go-to repository for concise 
 - **Functional Case Snippets**: Code that works as intended and produces the correct output.
 - **Error Handling Case Snippets**: Code that handles unexpected or incorrect behavior gracefully.
 - **Logical Error Case Snippets**: Code that contains errors or crashes due to incorrect logic or runtime issues.
+- **Multifile Code Snippets**: Code that demonstrates the structure and usage of multi-file programs and i/o.
 
 ### Structure
 
