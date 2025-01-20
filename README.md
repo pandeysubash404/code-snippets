@@ -4,9 +4,9 @@ Welcome to **Programming Language Code Snippets**, go-to repository for concise 
 
 ### Categories
 
-**Functional Case Snippets**: Code that works as intended and produces the correct output.
-**Error Handling Case Snippets**: Code that handles unexpected or incorrect behavior gracefully.
-**Logical Error Case Snippets**: Code that contains errors or crashes due to incorrect logic or runtime issues.
+- **Functional Case Snippets**: Code that works as intended and produces the correct output.
+- **Error Handling Case Snippets**: Code that handles unexpected or incorrect behavior gracefully.
+- **Logical Error Case Snippets**: Code that contains errors or crashes due to incorrect logic or runtime issues.
 
 ### Structure
 
