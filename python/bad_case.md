@@ -219,5 +219,5 @@ def file_not_found_error():
 file_not_found_error()
 ```
 
-## conclusion
+## Conclusion
 These bad case programs verify a wide variety of common errors that can occur during Python execution. They are designed to fail and raise exceptions such as `ZeroDivisionError`, `IndexError`, `TypeError`, `ValueError`, and others. 

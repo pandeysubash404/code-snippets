@@ -120,7 +120,7 @@ Loop condition is never met, causing the loop to run infinitely.
 def infinite_loop():
     counter = 10
     while counter > 0:
-        print("Sad case: Infinite loop!")
+        print(f"Sad case: Infinite loop {counter}!")
         counter += 1  # Should decrement to reach the end
 
 infinite_loop()
