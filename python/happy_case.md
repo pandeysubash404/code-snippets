@@ -9,16 +9,16 @@ Arithmetic operations like addition, subtraction, multiplication, division, and 
 
 ```python
 def test_arithmetic():
-    assert 2 + 2 == 4
-    assert 10 - 5 == 5
-    assert 10 * 3 == 30
-    assert 100 / 5 == 20
-    assert 2 ** 3 == 8
-    assert 9 // 2 == 4
-    assert 9 % 2 == 1
+    print("2 + 2 =", 2 + 2)
+    print("10 - 5 =", 10 - 5)
+    print("10 * 3 =", 10 * 3)
+    print("100 / 5 =", 100 / 5)
+    print("2 ** 3 =", 2 ** 3)
+    print("9 // 2 =", 9 // 2)
+    print("9 % 2 =", 9 % 2)
 
 test_arithmetic()
-print("Arithmetic test passed!")
+print("Arithmetic test completed!")
 ```
 
 ## 2. String Manupulation
@@ -26,15 +26,15 @@ String operations like concatenation, multiplication, length, case conversion, a
 
 ```python
 def test_strings():
-    assert "Hello" + " " + "World" == "Hello World"
-    assert "abc" * 3 == "abcabcabc"
-    assert len("test") == 4
-    assert "Python".upper() == "PYTHON"
-    assert "PYTHON".lower() == "python"
-    assert "racecar"[::-1] == "racecar"  # Palindrome check
+    print('"Hello" + " " + "World" =', "Hello" + " " + "World")
+    print('"abc" * 3 =', "abc" * 3)
+    print('len("test") =', len("test"))
+    print('"Python".upper() =', "Python".upper())
+    print('"PYTHON".lower() =', "PYTHON".lower())
+    print('"racecar"[::-1] =', "racecar"[::-1])  # Palindrome check
 
 test_strings()
-print("String manipulation test passed!")
+print("String manipulation test completed!")
 ```
 
 ## 3. List Operation
@@ -43,17 +43,17 @@ List operations like concatenation, appending, indexing, and popping elements.
 ```python
 def test_lists():
     lst = [1, 2, 3]
-    assert lst + [4, 5] == [1, 2, 3, 4, 5]
-    assert len(lst) == 3
+    print("List concatenation:", lst + [4, 5])
+    print("Length of list:", len(lst))
     lst.append(4)
-    assert lst == [1, 2, 3, 4]
-    assert lst[0] == 1
-    assert lst[-1] == 4
+    print("After appending:", lst)
+    print("First element:", lst[0])
+    print("Last element:", lst[-1])
     lst.pop()
-    assert lst == [1, 2, 3]
+    print("After popping:", lst)
 
 test_lists()
-print("List operations test passed!")
+print("List operations test completed!")
 ```
 
 ## 4. Dictionary Operations
@@ -62,14 +62,14 @@ Python dictionaries, including accessing, modifying, and checking elements.
 ```python
 def test_dictionaries():
     d = {"key1": "value1", "key2": "value2"}
-    assert d["key1"] == "value1"
-    assert len(d) == 2
+    print('Value for "key1":', d["key1"])
+    print("Length of dictionary:", len(d))
     d["key3"] = "value3"
-    assert "key3" in d
-    assert d.get("key2") == "value2"
+    print("Is 'key3' in dictionary?", "key3" in d)
+    print('Value for "key2":', d.get("key2"))
 
 test_dictionaries()
-print("Dictionary operations test passed!")
+print("Dictionary operations test completed!")
 ```
 
 ## 5. Boolean Logic
@@ -77,31 +77,29 @@ Boolean logic operations like and, or, not, and comparisons.
 
 ```python
 def test_boolean_logic():
-    assert True and True == True
-    assert True or False == True
-    assert not False == True
-    assert (5 > 3) == True
-    assert (3 < 1) == False
-    assert (5 == 5 and 2 == 2) == True
+    print("True and True =", True and True)
+    print("True or False =", True or False)
+    print("not False =", not False)
+    print("5 > 3 =", 5 > 3)
+    print("3 < 1 =", 3 < 1)
+    print("5 == 5 and 2 == 2 =", 5 == 5 and 2 == 2)
 
 test_boolean_logic()
-print("Boolean logic test passed!")
+print("Boolean logic test completed!")
 ```
 
 ## 6. Tuple Operation
 Tuple operations like indexing, concatenation, and repetition.
 
 ```python
-def test_boolean_logic():
-    assert True and True == True
-    assert True or False == True
-    assert not False == True
-    assert (5 > 3) == True
-    assert (3 < 1) == False
-    assert (5 == 5 and 2 == 2) == True
+def test_tuples():
+    t = (1, 2, 3)
+    print("Tuple concatenation:", t + (4, 5))
+    print("First element:", t[0])
+    print("Repetition of tuple:", t * 2)
 
-test_boolean_logic()
-print("Boolean logic test passed!")
+test_tuples()
+print("Tuple operations test completed!")
 ```
 
 ## 7. Set Operation
@@ -111,12 +109,12 @@ Set operations like union, intersection, and difference.
 def test_sets():
     s1 = {1, 2, 3}
     s2 = {3, 4, 5}
-    assert s1 | s2 == {1, 2, 3, 4, 5}  # Union
-    assert s1 & s2 == {3}              # Intersection
-    assert s1 - s2 == {1, 2}           # Difference
+    print("Union of sets:", s1 | s2)
+    print("Intersection of sets:", s1 & s2)
+    print("Difference of sets:", s1 - s2)
 
 test_sets()
-print("Set operations test passed!")
+print("Set operations test completed!")
 ```
 
 ## 8. Control Flow
@@ -126,21 +124,22 @@ Control flow constructs, including if-else statements, for loops, and while loop
 def test_control_flow():
     x = 10
     if x > 5:
-        assert True
+        print("x is greater than 5")
     else:
-        assert False
+        print("x is less than or equal to 5")
     
-    assert sum([i for i in range(5)]) == 10  # 0 + 1 + 2 + 3 + 4
+    print("Sum of first 5 numbers:", sum([i for i in range(5)]))
 
+    print("For loop result:")
     for i in range(3):
-        assert i in [0, 1, 2]
-    
+        print(i)
+
     while x > 0:
         x -= 1
-    assert x == 0
+    print("x after while loop:", x)
 
 test_control_flow()
-print("Control flow test passed!")
+print("Control flow test completed!")
 ```
 
 ## 9. Function Test
@@ -151,12 +150,12 @@ def add(a, b):
     return a + b
 
 def test_functions():
-    assert add(2, 3) == 5
-    assert add(10, -5) == 5
-    assert add(0, 0) == 0
+    print("add(2, 3) =", add(2, 3))
+    print("add(10, -5) =", add(10, -5))
+    print("add(0, 0) =", add(0, 0))
 
 test_functions()
-print("Function testing passed!")
+print("Function testing completed!")
 ```
 
 ## 10. List Comprehension
@@ -165,13 +164,13 @@ Validates the correct execution of list comprehensions for creating lists and fi
 ```python
 def test_list_comprehension():
     squares = [x**2 for x in range(5)]
-    assert squares == [0, 1, 4, 9, 16]
+    print("Squares:", squares)
     
     even_numbers = [x for x in range(10) if x % 2 == 0]
-    assert even_numbers == [0, 2, 4, 6, 8]
+    print("Even numbers:", even_numbers)
 
 test_list_comprehension()
-print("List comprehension test passed!")
+print("List comprehension test completed!")
 ```
 
 ## Conclusion

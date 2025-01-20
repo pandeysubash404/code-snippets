@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: false
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Programming Language Code Snippets
 
 Welcome to **Programming Language Code Snippets**, your go-to repository for concise code examples across various programming languages. Whether you're a beginner or an experienced developer, this collection provides helpful, categorized snippets to guide you through the development process.
