@@ -301,4 +301,4 @@ Enter the number of columns: 5
 ```
 ---
 
-These snippets should cover a wide variety of common input-related tasks in Python. You can experiment with them in an IDE to explore how different forms of user input can be handled.
+These snippets should cover a wide variety of common input-related tasks in Python. To explore how different forms of user input can be handled.
