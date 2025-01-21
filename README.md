@@ -11,12 +11,4 @@ Welcome to **Programming Language Code Snippets**, go-to repository for concise 
 - **Console Input Code Snippets**: Code that cover a wide variety of common input-related tasks.
 - **System Abuse Code Snippets**: Code that involve pushing the system to its limits in terms of CPU, memory, recursion, I/O, and other system resources.
 
-### Structure
-
-Each programming language has its own folder that includes a Markdown file containing:
-
-* Code snippets for Functional, Error Handling, and Logical error cases
-* Clear explanations of how the code works (or doesn’t)
-* Tips and insights for improving and debugging code
-
 This repository is a perfect reference for learning from different scenarios and improving your coding skills across a variety of languages. Explore, experiment, and grow as a developer!
