@@ -8,6 +8,8 @@ Welcome to **Programming Language Code Snippets**, go-to repository for concise 
 - **Error Handling Case Snippets**: Code that handles unexpected or incorrect behavior gracefully.
 - **Logical Error Case Snippets**: Code that contains errors or crashes due to incorrect logic or runtime issues.
 - **Multifile Code Snippets**: Code that demonstrates the structure and usage of multi-file programs and i/o.
+- **Console Input Code Snippets**: Code that cover a wide variety of common input-related tasks.
+- **System Abuse Code Snippets**: Code that involve pushing the system to its limits in terms of CPU, memory, recursion, I/O, and other system resources.
 
 ### Structure
 
