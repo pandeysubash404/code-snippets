@@ -2,6 +2,8 @@
 
 This Logical error  Case is designed to check `logical error case programs` that contain logical issues or errors that do not trigger explicit exceptions but lead to incorrect or unintended outcomes.
 
+---
+
 ## 1. Incorrect calculation (Logical Error)
 Function incorrectly calculates the average by summing the values but dividing by the wrong number.
 

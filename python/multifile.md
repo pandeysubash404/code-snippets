@@ -1,6 +1,8 @@
 # Multi-File Programming Snippets with CSV Input/Output
 
-This document demonstrates the structure and usage of multi-file Python programs that handle CSV files for input/output.
+It demonstrates the structure and usage of multi-file Python programs that handle CSV files for input/output.
+
+---
 
 ## Python Program Structure
 

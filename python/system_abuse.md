@@ -2,6 +2,8 @@
 
 It involve pushing the system to its limits in terms of CPU, memory, recursion, I/O, and other system resources, helping to identify weaknesses or points where the system might crash or degrade in performance.
 
+---
+
 ## 1. Infinite Loops
 Users could write code with infinite loops that consume CPU resources indefinitely.
 

@@ -1,6 +1,6 @@
 # Functionality Case Snippets
 
-This document contains a set of basic operation cases to validate that the Python compiler handles various operations correctly.
+It contains a set of basic operation cases to validate that the Python compiler handles various operations correctly.
 
 ---
 

@@ -383,7 +383,3 @@ Expected Output:
 ```text
 Decompressed data: b'Hello, world!'
 ```
-
----
-
-These snippets provide basic tests for each of the top 18 Python packages!
