@@ -132,8 +132,3 @@ while True:
     f = open('file.txt', 'w')  # Open files infinitely without closing them
     files.append(f)
 ```
-
----
-## Conclusion
-
-Testing with this type of "worst-case" code is essential for building a robust and secure web-based Python compiler.

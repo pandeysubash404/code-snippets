@@ -16,7 +16,7 @@ def division_by_zero():
 
 division_by_zero()
 ```
-Output:
+Expected Output:
 ```text
 Division by zero operation passed!
 ```
@@ -37,7 +37,7 @@ def index_out_of_range():
 
 index_out_of_range()
 ```
-Output:
+Expected Output:
 ```text
 Index out of range operation passed!
 ```
@@ -57,7 +57,7 @@ def key_error():
 
 key_error()
 ```
-Output:
+Expected Output:
 ```text
 KeyError operation passed!
 ```
@@ -76,7 +76,7 @@ def type_mismatch():
 
 type_mismatch()
 ```
-Output:
+Expected Output:
 ```text
 Type mismatch operation passed!
 ```
@@ -95,7 +95,7 @@ def invalid_syntax():
 
 invalid_syntax()
 ```
-Output:
+Expected Output:
 ```text
 SyntaxError operation passed!
 ```
@@ -114,7 +114,7 @@ def name_error():
 
 name_error()
 ```
-Output:
+Expected Output:
 ```text
 NameError operation passed!
 ```
@@ -133,7 +133,7 @@ def attribute_error():
 
 attribute_error()
 ```
-Output:
+Expected Output:
 ```text
 AttributeError operation passed!
 ```
@@ -152,7 +152,7 @@ def value_error():
 
 value_error()
 ```
-Output:
+Expected Output:
 ```text
 ValueError operation passed!
 ```
@@ -171,7 +171,7 @@ def import_error():
 
 import_error()
 ```
-Output:
+Expected Output:
 ```text
 ImportError operation passed!
 ```
@@ -192,7 +192,7 @@ def overflow_error():
 
 overflow_error()
 ```
-Output:
+Expected Output:
 ```text
 OverflowError operation passed!
 ```
@@ -214,7 +214,7 @@ def recursion_error():
 
 recursion_error()
 ```
-Output:
+Expected Output:
 ```text
 RecursionError operation passed!
 ```
@@ -233,7 +233,7 @@ def memory_error():
 
 memory_error()
 ```
-Output:
+Expected Output:
 ```text
 MemoryError operation passed!
 ```
@@ -253,10 +253,7 @@ def file_not_found_error():
 
 file_not_found_error()
 ```
-Output:
+Expected Output:
 ```text
 FileNotFoundError operation passed!
 ```
-
-## Conclusion
-These bad case programs verify a wide variety of common errors that can occur during Python execution. They are designed to fail and raise exceptions such as `ZeroDivisionError`, `IndexError`, `TypeError`, `ValueError`, and others. 

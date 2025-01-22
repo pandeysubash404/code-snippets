@@ -20,7 +20,7 @@ def arithmetic():
 arithmetic()
 print("Arithmetic operation completed!")
 ```
-Output:
+Expected Output:
 ```text
 2 + 2 = 4
 10 - 5 = 5
@@ -47,7 +47,7 @@ def strings():
 strings()
 print("String manipulation operation completed!")
 ```
-Output:
+Expected Output:
 ```text
 "Hello" + " " + "World" = Hello World
 "abc" * 3 = abcabcabc
@@ -76,7 +76,7 @@ def lists():
 lists()
 print("List operations completed!")
 ```
-Output:
+Expected Output:
 ```text
 List concatenation: [1, 2, 3, 4, 5]
 Length of list: 3
@@ -102,7 +102,7 @@ def dictionaries():
 dictionaries()
 print("Dictionary operations completed!")
 ```
-Output:
+Expected Output:
 ```text
 Value for "key1": value1
 Length of dictionary: 2
@@ -126,7 +126,7 @@ def boolean_logic():
 boolean_logic()
 print("Boolean logic operation completed!")
 ```
-Output:
+Expected Output:
 ```text
 True and True = True
 True or False = True
@@ -150,7 +150,7 @@ def tuples():
 tuples()
 print("Tuple operations completed!")
 ```
-Output:
+Expected Output:
 ```text
 Tuple concatenation: (1, 2, 3, 4, 5)
 First element: 1
@@ -172,7 +172,7 @@ def sets():
 sets()
 print("Set operations completed!")
 ```
-Output:
+Expected Output:
 ```text
 Union of sets: {1, 2, 3, 4, 5}
 Intersection of sets: {3}
@@ -204,7 +204,7 @@ def control_flow():
 control_flow()
 print("Control flow operration completed!")
 ```
-Output:
+Expected Output:
 ```text
 x is greater than 5
 Sum of first 5 numbers: 10
@@ -231,7 +231,7 @@ def functions():
 functions()
 print("Function operation completed!")
 ```
-Output:
+Expected Output:
 ```text
 add(2, 3) = 5
 add(10, -5) = 5
@@ -253,12 +253,9 @@ def list_comprehension():
 list_comprehension()
 print("List comprehension operation completed!")
 ```
-Output:
+Expected Output:
 ```text
 Squares: [0, 1, 4, 9, 16]
 Even numbers: [0, 2, 4, 6, 8]
 List comprehension operation completed!
 ```
-
-## Conclusion
-These operations cover a wide variety of basic operations in Python, ensuring that compiler handles common cases correctly.

@@ -18,7 +18,7 @@ def incorrect_average():
 
 incorrect_average()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Incorrect average calculation!
 ```
@@ -38,7 +38,7 @@ def off_by_one():
 
 off_by_one()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Off-by-one error!
 ```
@@ -56,7 +56,7 @@ def wrong_comparison():
 
 wrong_comparison()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Wrong comparison operator!
 ```
@@ -79,7 +79,7 @@ def mutable_default_argument():
 
 mutable_default_argument()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Mutable default argument!
 ```
@@ -98,7 +98,7 @@ def shadowing_builtin():
 
 shadowing_builtin()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Shadowing built-in function!
 ```
@@ -116,7 +116,7 @@ def floating_point_error():
 
 floating_point_error()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Floating-point precision error! (Got 0.30000000000000004)
 ```
@@ -134,7 +134,7 @@ def variable_scope():
 
 variable_scope()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Undefined variable!
 ```
@@ -151,7 +151,7 @@ def infinite_loop():
 
 infinite_loop()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Infinite loop 1!
 Logical error case: Infinite loop 2!
@@ -173,7 +173,7 @@ def conditional_statement():
 
 conditional_statement()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case passed!
 ```
@@ -194,7 +194,7 @@ def list_mutation_during_iteration():
 
 list_mutation_during_iteration()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case passed!
 ```
@@ -219,7 +219,7 @@ def incorrect_data_type():
 
 incorrect_data_type()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Incorrect data type assumption!
 ```
@@ -238,10 +238,7 @@ def is_vs_equals():
 
 is_vs_equals()
 ```
-Output:
+Expected Output:
 ```text
 Logical error case: Incorrect use of `is` instead of `==`
 ```
-
-## Conclusion
-These Logical error  cases demonstrate how programs can execute successfully but yield unintended or incorrect results due to logic flaws, wrong assumptions, or subtle issues that don’t result in exceptions or errors. 
